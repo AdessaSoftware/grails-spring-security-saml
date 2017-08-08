@@ -361,11 +361,11 @@ class SpringSecuritySamlGrailsPlugin extends Plugin {
 
             parserPool(BasicParserPool)
 
-            securityTagLib(SamlTagLib) {
+            /*securityTagLib(SamlTagLib) {
                 springSecurityService = ref('springSecurityService')
                 webExpressionHandler = ref('webExpressionHandler')
                 webInvocationPrivilegeEvaluator = ref('webInvocationPrivilegeEvaluator')
-            }
+            }*/
 
             springSecurityService(SamlSecurityService) {
                 config = conf
